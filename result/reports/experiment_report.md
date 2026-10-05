@@ -1,6 +1,6 @@
 # 中文 n-gram 语言模型实验报告
 
-> GitHub 仓库链接占位符：<https://github.com/OWNER/REPOSITORY>。创建仓库后请替换为实际地址。
+> GitHub 仓库链接：<https://github.com/Zero-203/LLM-HW1-n-gram>。
 
 ## 摘要
 
