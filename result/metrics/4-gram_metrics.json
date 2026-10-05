@@ -1,0 +1,549 @@
+{
+  "n": 4,
+  "model_name": "4-gram",
+  "k_candidates": [
+    1.0,
+    0.1,
+    0.01,
+    0.001,
+    0.0001
+  ],
+  "selected_candidate": "katz",
+  "selected_method": "katz",
+  "selected_k": null,
+  "selected_parameters": {
+    "unigram_base_k": 0.01
+  },
+  "selection_metric": "validation cross_entropy",
+  "validation_by_k": {
+    "1.0": {
+      "smoothing_method": "add_k",
+      "smoothing_k": 1.0,
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 8032769.197948865,
+      "cross_entropy": 10.754840952779182,
+      "perplexity": 46856.309485350175
+    },
+    "0.1": {
+      "smoothing_method": "add_k",
+      "smoothing_k": 0.1,
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 7745166.533408675,
+      "cross_entropy": 10.369778113488957,
+      "perplexity": 31881.40213187667
+    },
+    "0.01": {
+      "smoothing_method": "add_k",
+      "smoothing_k": 0.01,
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 7440371.78547142,
+      "cross_entropy": 9.961697293969753,
+      "perplexity": 21198.745703271212
+    },
+    "0.001": {
+      "smoothing_method": "add_k",
+      "smoothing_k": 0.001,
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 7195140.680612681,
+      "cross_entropy": 9.633364503068266,
+      "perplexity": 15265.71133350583
+    },
+    "0.0001": {
+      "smoothing_method": "add_k",
+      "smoothing_k": 0.0001,
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 7113541.09941447,
+      "cross_entropy": 9.52411319807319,
+      "perplexity": 13685.78795843301
+    }
+  },
+  "validation_by_smoothing": {
+    "good_turing": {
+      "smoothing_method": "good_turing",
+      "smoothing_k": null,
+      "parameters": {
+        "count_of_counts_scope": "all observed n-grams of this order",
+        "unseen_mass": "redistributed within context"
+      },
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 7081412.130932265,
+      "cross_entropy": 9.48109665701644,
+      "perplexity": 13109.555319733252
+    },
+    "katz": {
+      "smoothing_method": "katz",
+      "smoothing_k": null,
+      "parameters": {
+        "unigram_base_k": 0.01
+      },
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 6152684.447751097,
+      "cross_entropy": 8.237650184832598,
+      "perplexity": 3780.6460429092576
+    }
+  },
+  "validation_by_candidate": {
+    "add_k:1.0": {
+      "smoothing_method": "add_k",
+      "smoothing_k": 1.0,
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 8032769.197948865,
+      "cross_entropy": 10.754840952779182,
+      "perplexity": 46856.309485350175
+    },
+    "add_k:0.1": {
+      "smoothing_method": "add_k",
+      "smoothing_k": 0.1,
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 7745166.533408675,
+      "cross_entropy": 10.369778113488957,
+      "perplexity": 31881.40213187667
+    },
+    "add_k:0.01": {
+      "smoothing_method": "add_k",
+      "smoothing_k": 0.01,
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 7440371.78547142,
+      "cross_entropy": 9.961697293969753,
+      "perplexity": 21198.745703271212
+    },
+    "add_k:0.001": {
+      "smoothing_method": "add_k",
+      "smoothing_k": 0.001,
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 7195140.680612681,
+      "cross_entropy": 9.633364503068266,
+      "perplexity": 15265.71133350583
+    },
+    "add_k:0.0001": {
+      "smoothing_method": "add_k",
+      "smoothing_k": 0.0001,
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 7113541.09941447,
+      "cross_entropy": 9.52411319807319,
+      "perplexity": 13685.78795843301
+    },
+    "good_turing": {
+      "smoothing_method": "good_turing",
+      "smoothing_k": null,
+      "parameters": {
+        "count_of_counts_scope": "all observed n-grams of this order",
+        "unseen_mass": "redistributed within context"
+      },
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 7081412.130932265,
+      "cross_entropy": 9.48109665701644,
+      "perplexity": 13109.555319733252
+    },
+    "katz": {
+      "smoothing_method": "katz",
+      "smoothing_k": null,
+      "parameters": {
+        "unigram_base_k": 0.01
+      },
+      "event_count": 746898,
+      "body_token_count": 734379,
+      "unknown_token_count": 14993,
+      "unknown_token_rate": 0.02041588879856314,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 6152684.447751097,
+      "cross_entropy": 8.237650184832598,
+      "perplexity": 3780.6460429092576
+    }
+  },
+  "selected_validation_metrics": {
+    "smoothing_method": "katz",
+    "smoothing_k": null,
+    "parameters": {
+      "unigram_base_k": 0.01
+    },
+    "event_count": 746898,
+    "body_token_count": 734379,
+    "unknown_token_count": 14993,
+    "unknown_token_rate": 0.02041588879856314,
+    "zero_probability_event_count": 0,
+    "zero_probability_event_rate": 0.0,
+    "ngram_coverage": 1.0,
+    "negative_log_likelihood": 6152684.447751097,
+    "cross_entropy": 8.237650184832598,
+    "perplexity": 3780.6460429092576
+  },
+  "selected_test_metrics": {
+    "smoothing_method": "katz",
+    "smoothing_k": null,
+    "parameters": {
+      "unigram_base_k": 0.01
+    },
+    "event_count": 790563,
+    "body_token_count": 777711,
+    "unknown_token_count": 15313,
+    "unknown_token_rate": 0.019689833369979336,
+    "zero_probability_event_count": 0,
+    "zero_probability_event_rate": 0.0,
+    "ngram_coverage": 1.0,
+    "negative_log_likelihood": 6449228.156159492,
+    "cross_entropy": 8.157766245270134,
+    "perplexity": 3490.381233777794
+  },
+  "test": {
+    "add_k_by_k": {
+      "1.0": {
+        "smoothing_method": "add_k",
+        "smoothing_k": 1.0,
+        "event_count": 790563,
+        "body_token_count": 777711,
+        "unknown_token_count": 15313,
+        "unknown_token_rate": 0.019689833369979336,
+        "zero_probability_event_count": 0,
+        "zero_probability_event_rate": 0.0,
+        "ngram_coverage": 1.0,
+        "negative_log_likelihood": 8493695.276946165,
+        "cross_entropy": 10.743856311193623,
+        "perplexity": 46344.4262934056
+      },
+      "0.1": {
+        "smoothing_method": "add_k",
+        "smoothing_k": 0.1,
+        "event_count": 790563,
+        "body_token_count": 777711,
+        "unknown_token_count": 15313,
+        "unknown_token_rate": 0.019689833369979336,
+        "zero_probability_event_count": 0,
+        "zero_probability_event_rate": 0.0,
+        "ngram_coverage": 1.0,
+        "negative_log_likelihood": 8172590.033205407,
+        "cross_entropy": 10.337683439783302,
+        "perplexity": 30874.42467607244
+      },
+      "0.01": {
+        "smoothing_method": "add_k",
+        "smoothing_k": 0.01,
+        "event_count": 790563,
+        "body_token_count": 777711,
+        "unknown_token_count": 15313,
+        "unknown_token_rate": 0.019689833369979336,
+        "zero_probability_event_count": 0,
+        "zero_probability_event_rate": 0.0,
+        "ngram_coverage": 1.0,
+        "negative_log_likelihood": 7829994.781368284,
+        "cross_entropy": 9.904327398788311,
+        "perplexity": 20016.803980435943
+      },
+      "0.001": {
+        "smoothing_method": "add_k",
+        "smoothing_k": 0.001,
+        "event_count": 790563,
+        "body_token_count": 777711,
+        "unknown_token_count": 15313,
+        "unknown_token_rate": 0.019689833369979336,
+        "zero_probability_event_count": 0,
+        "zero_probability_event_rate": 0.0,
+        "ngram_coverage": 1.0,
+        "negative_log_likelihood": 7551330.715173295,
+        "cross_entropy": 9.55183927805032,
+        "perplexity": 14070.55054091302
+      },
+      "0.0001": {
+        "smoothing_method": "add_k",
+        "smoothing_k": 0.0001,
+        "event_count": 790563,
+        "body_token_count": 777711,
+        "unknown_token_count": 15313,
+        "unknown_token_rate": 0.019689833369979336,
+        "zero_probability_event_count": 0,
+        "zero_probability_event_rate": 0.0,
+        "ngram_coverage": 1.0,
+        "negative_log_likelihood": 7450189.020733809,
+        "cross_entropy": 9.423902991581707,
+        "perplexity": 12380.810239860753
+      }
+    },
+    "add_k": {
+      "smoothing_method": "add_k",
+      "smoothing_k": 0.0001,
+      "event_count": 790563,
+      "body_token_count": 777711,
+      "unknown_token_count": 15313,
+      "unknown_token_rate": 0.019689833369979336,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 7450189.020733809,
+      "cross_entropy": 9.423902991581707,
+      "perplexity": 12380.810239860753
+    },
+    "mle": {
+      "smoothing_method": "add_k",
+      "smoothing_k": null,
+      "parameters": {},
+      "event_count": 790563,
+      "body_token_count": 777711,
+      "unknown_token_count": 15313,
+      "unknown_token_rate": 0.019689833369979336,
+      "zero_probability_event_count": 617263,
+      "zero_probability_event_rate": 0.7807891338198221,
+      "ngram_coverage": 0.21921086618017793,
+      "negative_log_likelihood": null,
+      "cross_entropy": null,
+      "perplexity": null
+    },
+    "good_turing": {
+      "smoothing_method": "good_turing",
+      "smoothing_k": null,
+      "parameters": {
+        "count_of_counts_scope": "all observed n-grams of this order",
+        "unseen_mass": "redistributed within context"
+      },
+      "event_count": 790563,
+      "body_token_count": 777711,
+      "unknown_token_count": 15313,
+      "unknown_token_rate": 0.019689833369979336,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 7416835.898521473,
+      "cross_entropy": 9.38171391593266,
+      "perplexity": 11869.340382592793
+    },
+    "katz": {
+      "smoothing_method": "katz",
+      "smoothing_k": null,
+      "parameters": {
+        "unigram_base_k": 0.01
+      },
+      "event_count": 790563,
+      "body_token_count": 777711,
+      "unknown_token_count": 15313,
+      "unknown_token_rate": 0.019689833369979336,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 6449228.156159492,
+      "cross_entropy": 8.157766245270134,
+      "perplexity": 3490.381233777794
+    },
+    "by_candidate": {
+      "add_k:1.0": {
+        "smoothing_method": "add_k",
+        "smoothing_k": 1.0,
+        "event_count": 790563,
+        "body_token_count": 777711,
+        "unknown_token_count": 15313,
+        "unknown_token_rate": 0.019689833369979336,
+        "zero_probability_event_count": 0,
+        "zero_probability_event_rate": 0.0,
+        "ngram_coverage": 1.0,
+        "negative_log_likelihood": 8493695.276946165,
+        "cross_entropy": 10.743856311193623,
+        "perplexity": 46344.4262934056
+      },
+      "add_k:0.1": {
+        "smoothing_method": "add_k",
+        "smoothing_k": 0.1,
+        "event_count": 790563,
+        "body_token_count": 777711,
+        "unknown_token_count": 15313,
+        "unknown_token_rate": 0.019689833369979336,
+        "zero_probability_event_count": 0,
+        "zero_probability_event_rate": 0.0,
+        "ngram_coverage": 1.0,
+        "negative_log_likelihood": 8172590.033205407,
+        "cross_entropy": 10.337683439783302,
+        "perplexity": 30874.42467607244
+      },
+      "add_k:0.01": {
+        "smoothing_method": "add_k",
+        "smoothing_k": 0.01,
+        "event_count": 790563,
+        "body_token_count": 777711,
+        "unknown_token_count": 15313,
+        "unknown_token_rate": 0.019689833369979336,
+        "zero_probability_event_count": 0,
+        "zero_probability_event_rate": 0.0,
+        "ngram_coverage": 1.0,
+        "negative_log_likelihood": 7829994.781368284,
+        "cross_entropy": 9.904327398788311,
+        "perplexity": 20016.803980435943
+      },
+      "add_k:0.001": {
+        "smoothing_method": "add_k",
+        "smoothing_k": 0.001,
+        "event_count": 790563,
+        "body_token_count": 777711,
+        "unknown_token_count": 15313,
+        "unknown_token_rate": 0.019689833369979336,
+        "zero_probability_event_count": 0,
+        "zero_probability_event_rate": 0.0,
+        "ngram_coverage": 1.0,
+        "negative_log_likelihood": 7551330.715173295,
+        "cross_entropy": 9.55183927805032,
+        "perplexity": 14070.55054091302
+      },
+      "add_k:0.0001": {
+        "smoothing_method": "add_k",
+        "smoothing_k": 0.0001,
+        "event_count": 790563,
+        "body_token_count": 777711,
+        "unknown_token_count": 15313,
+        "unknown_token_rate": 0.019689833369979336,
+        "zero_probability_event_count": 0,
+        "zero_probability_event_rate": 0.0,
+        "ngram_coverage": 1.0,
+        "negative_log_likelihood": 7450189.020733809,
+        "cross_entropy": 9.423902991581707,
+        "perplexity": 12380.810239860753
+      },
+      "good_turing": {
+        "smoothing_method": "good_turing",
+        "smoothing_k": null,
+        "parameters": {
+          "count_of_counts_scope": "all observed n-grams of this order",
+          "unseen_mass": "redistributed within context"
+        },
+        "event_count": 790563,
+        "body_token_count": 777711,
+        "unknown_token_count": 15313,
+        "unknown_token_rate": 0.019689833369979336,
+        "zero_probability_event_count": 0,
+        "zero_probability_event_rate": 0.0,
+        "ngram_coverage": 1.0,
+        "negative_log_likelihood": 7416835.898521473,
+        "cross_entropy": 9.38171391593266,
+        "perplexity": 11869.340382592793
+      },
+      "katz": {
+        "smoothing_method": "katz",
+        "smoothing_k": null,
+        "parameters": {
+          "unigram_base_k": 0.01
+        },
+        "event_count": 790563,
+        "body_token_count": 777711,
+        "unknown_token_count": 15313,
+        "unknown_token_rate": 0.019689833369979336,
+        "zero_probability_event_count": 0,
+        "zero_probability_event_rate": 0.0,
+        "ngram_coverage": 1.0,
+        "negative_log_likelihood": 6449228.156159492,
+        "cross_entropy": 8.157766245270134,
+        "perplexity": 3490.381233777794
+      }
+    },
+    "selected": {
+      "smoothing_method": "katz",
+      "smoothing_k": null,
+      "parameters": {
+        "unigram_base_k": 0.01
+      },
+      "event_count": 790563,
+      "body_token_count": 777711,
+      "unknown_token_count": 15313,
+      "unknown_token_rate": 0.019689833369979336,
+      "zero_probability_event_count": 0,
+      "zero_probability_event_rate": 0.0,
+      "ngram_coverage": 1.0,
+      "negative_log_likelihood": 6449228.156159492,
+      "cross_entropy": 8.157766245270134,
+      "perplexity": 3490.381233777794
+    }
+  },
+  "training": {
+    "paragraph_count": 98511,
+    "body_token_count": 5774785,
+    "event_count": 5873296,
+    "vocabulary_size": 70734,
+    "unique_ngram_count": 4912576,
+    "unique_context_count": 3701510,
+    "model_artifact_size_bytes": 33381501,
+    "singleton_word_count": 55905
+  },
+  "timing": {
+    "vocabulary_scan_seconds": 7.312170699999115,
+    "ngram_counting_seconds": 107.45053299999927,
+    "validation_evaluation_seconds": 80.9768355999986,
+    "test_evaluation_seconds": 100.57147239999904,
+    "model_artifact_save_seconds": 98.78337979999924,
+    "measured_total_seconds": 395.09454259999984,
+    "measured_total_scope": "词表扫描、n-gram 计数、验证/测试评估及词表/计数文件写入；不含最终指标与元数据 JSON 写入"
+  }
+}

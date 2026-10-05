@@ -1,0 +1,46 @@
+{
+  "n": 2,
+  "model_name": "bigram",
+  "training_data": "data\\processed\\train.jsonl",
+  "validation_data": "data\\processed\\val.jsonl",
+  "test_data": "data\\processed\\test.jsonl",
+  "vocabulary_file": "vocabulary.json",
+  "ngram_counts_file": "ngram_counts.jsonl.gz",
+  "metrics_file": "result\\metrics\\bigram_metrics.json",
+  "minimum_word_frequency": 2,
+  "rare_word_mapping": "training frequency below 2 and evaluation OOV map to <UNK>",
+  "boundary_tokens": {
+    "context_start": "<s>",
+    "predicted_end": "</s>",
+    "sequence_unit": "paragraph"
+  },
+  "prediction_vocabulary_size": 70734,
+  "k_candidates": [
+    1.0,
+    0.1,
+    0.01,
+    0.001,
+    0.0001
+  ],
+  "selected_candidate": "good_turing",
+  "selected_method": "good_turing",
+  "selected_k": null,
+  "selected_parameters": {
+    "count_of_counts_scope": "all observed n-grams of this order",
+    "unseen_mass": "redistributed within context"
+  },
+  "validation_cross_entropy": 6.359333520368165,
+  "test_selected_perplexity": 549.5513168283147,
+  "timing": {
+    "vocabulary_scan_seconds": 3.096705899999506,
+    "ngram_counting_seconds": 35.70164260000092,
+    "validation_evaluation_seconds": 14.537765700002637,
+    "test_evaluation_seconds": 21.09328689999893,
+    "model_artifact_save_seconds": 34.77495679999993,
+    "measured_total_seconds": 109.20443800000066,
+    "measured_total_scope": "词表扫描、n-gram 计数、验证/测试评估及词表/计数文件写入；不含最终指标与元数据 JSON 写入"
+  },
+  "test_add_k_perplexity": 556.7399556040799,
+  "test_mle_zero_probability_event_count": 132206,
+  "ngram_count_encoding": "gzip JSONL; token_ids are unsigned big-endian 32-bit vocabulary indices"
+}

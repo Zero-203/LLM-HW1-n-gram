@@ -1,0 +1,45 @@
+{
+  "n": 6,
+  "model_name": "6-gram",
+  "training_data": "data\\processed\\train.jsonl",
+  "validation_data": "data\\processed\\val.jsonl",
+  "test_data": "data\\processed\\test.jsonl",
+  "vocabulary_file": "vocabulary.json",
+  "ngram_counts_file": "ngram_counts.jsonl.gz",
+  "metrics_file": "result\\metrics\\6-gram_metrics.json",
+  "minimum_word_frequency": 2,
+  "rare_word_mapping": "training frequency below 2 and evaluation OOV map to <UNK>",
+  "boundary_tokens": {
+    "context_start": "<s>",
+    "predicted_end": "</s>",
+    "sequence_unit": "paragraph"
+  },
+  "prediction_vocabulary_size": 70734,
+  "k_candidates": [
+    1.0,
+    0.1,
+    0.01,
+    0.001,
+    0.0001
+  ],
+  "selected_candidate": "katz",
+  "selected_method": "katz",
+  "selected_k": null,
+  "selected_parameters": {
+    "unigram_base_k": 0.01
+  },
+  "validation_cross_entropy": 8.263292283469324,
+  "test_selected_perplexity": 3537.8564969035137,
+  "timing": {
+    "vocabulary_scan_seconds": 3.1703187999992224,
+    "ngram_counting_seconds": 180.33015479999813,
+    "validation_evaluation_seconds": 188.94608240000161,
+    "test_evaluation_seconds": 206.46553570000106,
+    "model_artifact_save_seconds": 85.0284845999995,
+    "measured_total_seconds": 663.9408130999982,
+    "measured_total_scope": "词表扫描、n-gram 计数、验证/测试评估及词表/计数文件写入；不含最终指标与元数据 JSON 写入"
+  },
+  "test_add_k_perplexity": 33442.418521533626,
+  "test_mle_zero_probability_event_count": 717533,
+  "ngram_count_encoding": "gzip JSONL; token_ids are unsigned big-endian 32-bit vocabulary indices"
+}

@@ -1,0 +1,130 @@
+{
+  "cleaning_rules": {
+    "record_format": "date-page-article-paragraph/m",
+    "output_format": "one UTF-8 JSON object per paragraph (JSONL)",
+    "preserved": [
+      "body words",
+      "punctuation",
+      "numbers",
+      "dates",
+      "bylines"
+    ],
+    "removed": [
+      "paragraph identifiers from token sequences",
+      "POS tags",
+      "group brackets and outer labels"
+    ],
+    "paragraph_boundaries": "one JSONL record per paragraph; tokens are not joined across records",
+    "unknown_word_mapping": "not applied during cleaning",
+    "train_validation_test_split": "not applied during cleaning"
+  },
+  "totals": {
+    "source_file_count": 6,
+    "article_count": 18647,
+    "paragraph_count": 123882,
+    "empty_paragraph_count": 0,
+    "token_count": 7286875,
+    "token_annotation_issue_count": 1,
+    "malformed_line_count": 0
+  },
+  "files": [
+    {
+      "source_file": "199801.txt",
+      "source_encoding": "utf-8-sig",
+      "output_file": "199801.cleaned.jsonl",
+      "line_count": 22564,
+      "blank_line_count": 3080,
+      "article_count": 3148,
+      "paragraph_count": 19484,
+      "empty_paragraph_count": 0,
+      "token_count": 1120721,
+      "token_annotation_issue_count": 0,
+      "token_annotation_issue_examples": [],
+      "malformed_line_count": 0,
+      "malformed_examples": [],
+      "rejected_file": null
+    },
+    {
+      "source_file": "199802.txt",
+      "source_encoding": "utf-8-sig",
+      "output_file": "199802.cleaned.jsonl",
+      "line_count": 21357,
+      "blank_line_count": 2512,
+      "article_count": 2626,
+      "paragraph_count": 18845,
+      "empty_paragraph_count": 0,
+      "token_count": 1149581,
+      "token_annotation_issue_count": 0,
+      "token_annotation_issue_examples": [],
+      "malformed_line_count": 0,
+      "malformed_examples": [],
+      "rejected_file": null
+    },
+    {
+      "source_file": "199803.txt",
+      "source_encoding": "utf-8-sig",
+      "output_file": "199803.cleaned.jsonl",
+      "line_count": 24562,
+      "blank_line_count": 3066,
+      "article_count": 2905,
+      "paragraph_count": 21496,
+      "empty_paragraph_count": 0,
+      "token_count": 1243578,
+      "token_annotation_issue_count": 0,
+      "token_annotation_issue_examples": [],
+      "malformed_line_count": 0,
+      "malformed_examples": [],
+      "rejected_file": null
+    },
+    {
+      "source_file": "199804.txt",
+      "source_encoding": "utf-8-sig",
+      "output_file": "199804.cleaned.jsonl",
+      "line_count": 24957,
+      "blank_line_count": 3463,
+      "article_count": 3465,
+      "paragraph_count": 21494,
+      "empty_paragraph_count": 0,
+      "token_count": 1286419,
+      "token_annotation_issue_count": 0,
+      "token_annotation_issue_examples": [],
+      "malformed_line_count": 0,
+      "malformed_examples": [],
+      "rejected_file": null
+    },
+    {
+      "source_file": "199805.txt",
+      "source_encoding": "utf-8-sig",
+      "output_file": "199805.cleaned.jsonl",
+      "line_count": 24739,
+      "blank_line_count": 3319,
+      "article_count": 3223,
+      "paragraph_count": 21420,
+      "empty_paragraph_count": 0,
+      "token_count": 1242161,
+      "token_annotation_issue_count": 1,
+      "token_annotation_issue_examples": [
+        "line 14050: 有/v  家/q  洗衣机/n  生产/vn  企业/n  ，/w  突然/ad  发现/v  一些/m  地区/n  和/c  城市/n  的/u  报纸/n  上/f  先后/d  出现/v  了/u  同一/v  /m  篇/q  文章/n  ，/w  针对性/n  极/d  强/a  ，/w  消费者/n  看/v  过/u  这/r  篇/q  文章/n  ，/w  可以/v  得出/v"
+      ],
+      "malformed_line_count": 0,
+      "malformed_examples": [],
+      "rejected_file": null
+    },
+    {
+      "source_file": "199806.txt",
+      "source_encoding": "utf-8-sig",
+      "output_file": "199806.cleaned.jsonl",
+      "line_count": 24410,
+      "blank_line_count": 3267,
+      "article_count": 3280,
+      "paragraph_count": 21143,
+      "empty_paragraph_count": 0,
+      "token_count": 1244415,
+      "token_annotation_issue_count": 0,
+      "token_annotation_issue_examples": [],
+      "malformed_line_count": 0,
+      "malformed_examples": [],
+      "rejected_file": null
+    }
+  ]
+}
